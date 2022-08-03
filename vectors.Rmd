@@ -38,7 +38,26 @@ scalar_pika
 
 ```
 
+
 ```{r}
-bananas <- c(1, 2, 3)   
+bananas <- c(1, 2, 3)  
+apples <- c(6, 7, 8)
+
+bananas + apples  #vector addition
+bananas - apples   # vector subtraction
+bananas %*% apples  #vector mult via dot product
+
+```
+
+
+### Matrices 
+```{r}
+my_values <- seq( from = 1, to = 10)
+
+my_matrix <- matrix(data =my_values, nrow= 2, ncol = 5, byrow = TRUE)
+my_matrix
+
+5 * my_matrix
+class(my_matrix)  #can do this in console to see the class type, use in console
 ```
 
