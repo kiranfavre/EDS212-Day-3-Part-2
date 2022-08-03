@@ -1,0 +1,44 @@
+---
+title: "Creating and working with vectors"
+author: "Kiran Favre"
+date: "2022-08-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Let's make some vectors!
+
+```{r}
+marmot <- c("blue", "green", 4, "yellow")
+
+# Check class of this vector
+class(marmot)
+```
+
+Using c() will create a vector
+
+```{r}
+pika <- c(12.4, 6.8, 2, 4.9, 5.4)
+
+#---------##---- multiply by a scalar
+
+5.2 * pika  # this is not storing a value, just calculating
+
+scalar_pika <- 5.2 * pika
+
+scalar_pika
+
+```
+
+```{r}
+bananas <- c(1, 2, 3)   
+```
+
